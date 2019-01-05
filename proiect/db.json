@@ -1,0 +1,18 @@
+{
+  "contact": [
+    {
+      "nume": "Adrian",
+      "prenume": "Mos",
+      "email": "adrian@gmail.com",
+      "text": "Imi place",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nume": "Toma",
+      "prenume": "Rares",
+      "email": "rares@gmail.com",
+      "text": "util"
+    }
+  ]
+}

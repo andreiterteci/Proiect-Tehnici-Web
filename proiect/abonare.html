@@ -1,0 +1,56 @@
+<!-- tagurile semantice: header, nav, section, footer -->
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<title>Proiect Tehnici Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+  <h1>Planeta Marte</h1>
+</header>
+
+<nav class="navbar">
+  <a href="acasa.html">Acasa</a>
+  <a href="atmosfera.html">Atmosfera</a>
+  <a href="clima.html">Clima</a>
+  <a href="orbita.html">Orbita</a>
+  <a href="sateliti.html">Sateliti naturali</a>
+  <a href="abonare.html" class="active">Abonare</a>
+</nav>
+
+
+<section class="reviews">
+
+    <div class="row">
+      <div class="col-3 m-auto text-center">
+        <h2>Aboneaza-te!</h2>
+        <input  class="w-100" type="text" id="nume" placeholder="Nume">
+        <br>
+        <input  class="w-100" type="text" id="prenume" placeholder="Prenume">
+        <br>
+        <input  class="w-100" type="email" id="email" placeholder="Email">
+        <br>
+        <input type="button" value="Aboneaza-te" onclick="inputData()">
+        
+      </div>
+    </div>
+
+
+</section>
+
+
+
+
+<footer class="footer">
+  <h2>Abonati-va pentru a fi la curent cu noile informatii!</h2>
+</footer>
+
+<script src="assets/js/javascript.js"></script>
+</body>
+</html>

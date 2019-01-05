@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background-image: url("../img/mars-overview.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+.header:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.header h1{
+  z-index: 2;
+  position: relative;
+}
+
+
+.navbar {
+    display: flex;
+    background-color: #7DD8F9;
+}
+
+.navbar a {
+    color: #000507;
+    text-transform: uppercase;
+    font-weight: 450;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a.active{
+  border-bottom: 1px solid black;
+  background: #30C7FA;
+}
+
+.navbar a:hover {
+    background-color: #8EE0F6;
+    color: black;
+}
+
+.row {
+    display: flex;
+}
+
+.col-3{
+    width: calc(100%/3);
+    padding: 20px;
+}
+
+.col-3 img{
+    height: 50%;
+}
+
+.col-6 {
+    width: 60%;
+    padding: 20px;
+}
+
+.col-6 .col-6{
+  padding: 5px;
+}
+
+.footer {
+    padding: 1px;
+    text-align: center;
+    background: #7DD8F9;
+}
+
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.p-20{
+  padding: 20px;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.line{
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+* {
+  font-family: 'verdana';
+}
+table {
+  margin-bottom: 15px;
+  border-collapse: collapse;
+}
+input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid grey;
+}
+th, td {
+  border: 1px solid #ccc;
+  font: 13px 'verdana';
+  padding: 5px;
+}
+th {
+  font-weight: bold
+}
+table [type="text"],
+table [type="email"],
+table [type="number"] {
+  display: block;
+  width: 90px;
+}
+
+.note{
+  padding: 50px;
+}
+
+input[type="button"]{
+
+  padding: 10px 10px;
+  border: 1px solid grey;
+  background: white;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
+input:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer{
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    .col-3, .col-6{
+      width: 100%;
+    }
+}

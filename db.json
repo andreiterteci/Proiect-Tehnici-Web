@@ -1,18 +1,28 @@
 {
-  "contact": [
+  "abonati": [
     {
-      "nume": "Adrian",
-      "prenume": "Mos",
-      "email": "adrian@gmail.com",
-      "text": "Imi place",
+      "nume": "Terteci",
+      "prenume": "Andrei",
+      "email": "andreiterteci@gmail.com",
       "id": 1
     },
+	{
+      "nume": "Popescu",
+      "prenume": "Ionut",
+      "email": "ionpopescu@gmail.com",
+      "id": 2
+    },
+	{
+      "nume": "Ionescu",
+      "prenume": "Florin",
+      "email": "florinionescu@yahoo.com",
+      "id": 3
+    },
     {
-      "id": 2,
-      "nume": "Toma",
-      "prenume": "Rares",
-      "email": "rares@gmail.com",
-      "text": "util"
+      "nume": "Petrescu",
+      "prenume": "Marius",
+      "email": "mariuspetrescu@yahoo.com",
+      "id": 4
     }
   ]
 }

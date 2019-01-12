@@ -78,13 +78,13 @@
 
 
 //Get users
- var url  = "http://localhost:3000/contact";
+ var url  = "http://localhost:3000/abonati";
 var xhr  = new XMLHttpRequest();
 xhr.open('GET', url, true);
 xhr.onload = function () {
 	var datas = JSON.parse(xhr.responseText);
 
-	if (xhr.readyState == 3 && xhr.status == "200") {
+	if (xhr.readyState == 4 && xhr.status == "200") {
 
    var info = new Array();
         info = datas;
@@ -130,18 +130,6 @@ xhr.onload = function () {
 
             news.appendChild(button);
 
-            var button = document.createElement('input');
-
-            button.setAttribute('type', 'button');
-            button.setAttribute('value', 'Upload');
-
-            button.setAttribute('onclick', 'uploadUser("id")');
-            button.setAttribute('onclick', 'uploadUser("id")');
-
-            news.appendChild(button);
-
-
-
             news.appendChild(l);
 
         }
@@ -167,7 +155,7 @@ function inputData() {
   xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
   xhr.onload = function () {
   	var users = xhr.responseText;
-  	if (xhr.readyState == 3 && xhr.status == "201") {
+  	if (xhr.readyState == 4 && xhr.status == "201") {
   		console.table(users);
   	} else {
   		console.error(users);
@@ -185,35 +173,11 @@ function deleteUser(who){
   xhr.open("DELETE", url+"/"+who, true);
   xhr.onload = function () {
   	var users = JSON.parse(xhr.responseText);
-  	if (xhr.readyState == 3 && xhr.status == "200") {
+  	if (xhr.readyState == 4 && xhr.status == "200") {
   		console.table(users);
   	} else {
   		console.error(users);
   	}
   }
   xhr.send(null);
-}
-
-// Update a user
-function uploadUser(){
-  var data = {};
-  data.nume  = document.getElementById("nume").value;
-  data.prenume  = document.getElementById("prenume").value;
-  data.email  = document.getElementById("email").value;
-  var json = JSON.stringify(data);
-
-  var xhr = new XMLHttpRequest();
-  var who = document.getElementById('id').value;
-
-  xhr.open("PUT", url+'/'+who, true);
-  xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
-  xhr.onload = function () {
-  	var users = JSON.parse(xhr.responseText);
-  	if (xhr.readyState == 3 && xhr.status == "200") {
-  		console.table(users);
-  	} else {
-  		console.error(users);
-  	}
-  }
-  xhr.send(json);
 }

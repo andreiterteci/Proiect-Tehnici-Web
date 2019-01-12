@@ -1,4 +1,4 @@
-<!-- tagurile semantice: header, nav, section, footer -->
+<!-- taguri semantice folosite: header, nav, section, footer -->
 
 <!DOCTYPE html>
 <html lang="ro">
@@ -12,7 +12,7 @@
 <body>
 
 <header class="header">
-  <h1>Planeta Marte</h1>
+  <h1>Admin Panel</h1>
 </header>
 
 <nav class="navbar">
@@ -21,24 +21,16 @@
   <a href="clima.html">Clima</a>
   <a href="orbita.html">Orbita</a>
   <a href="sateliti.html">Sateliti naturali</a>
-  <a href="abonare.html" class="active">Abonare</a>
-  <a href="admin.html" class="admin-panel">Admin</a>
+  <a href="abonare.html">Abonare</a>
+  <a href="admin.html" class="admin-panel active">Admin</a>
 </nav>
-
 
 <section class="reviews">
 
     <div class="row">
-      <div class="col-3 m-auto text-center">
-        <h2>Aboneaza-te!</h2>
-        <input  class="w-100" type="text" id="nume" placeholder="Nume">
-        <br>
-        <input  class="w-100" type="text" id="prenume" placeholder="Prenume">
-        <br>
-        <input  class="w-100" type="email" id="email" placeholder="Email">
-        <br>
-        <input type="button" value="Aboneaza-te" onclick="inputData()">
-
+      <div class="col-3 m-auto">
+        <h2>Lista abonatilor:</h2>
+        <div class="news-story"></div>
       </div>
     </div>
 
